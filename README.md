@@ -1,0 +1,47 @@
+<html>
+<head><!--Bunu giriş.html diye kaydet.-->
+<!doctype html><!--Bu bir html sayfası.Profesyonel kullanım.Şart değil-->
+<meta charset="utf-8"/><!--Türkçe karakter kullanım-->
+<link rel="stylesheet" href="girişcss.css"><!--Açıklama listenin altında-->
+</head>
+<body>
+<h3 align=center>Neden HTML5/CSS3?</h3>
+<ul>
+<li>Burada div gerekli değil.Kendiliğinden bölümlere ayrılmıştır.</li>
+<li>Bütün browserlarda verimli çalışma</li>
+<li>Mobilde sorun çıkaran sayfalara son.</li>
+<li>Video ekleme vs. yeni özellikler</li>
+</ul>
+<h4>link rey nedir?</h4>
+Link rey ile başlayan satır başka bir yere yazdığımız komutları şuankş sayfada kullanmamızı sağlar.Örneğin; href = "dosyaadi.css" kullanımında
+burda dosya adi girişcss olan kodları şuanki sayfaya yansıttık.Dikkat edilirse girişcss.css yani css uzantılı.Burda css uzantılı bölüme css kodlarını
+html uzantılı sayfamızanise html kodlarını yazıp verilen satırla birbirine bağlayabiliriz.Kodlar uzayınca çok işe yarayan bir özellik.</body>
+<p>Şu ana kadar ne öğrendim</p>
+<table border=5>
+<tr><th>1.sınıf</th><th>2.sınıf</th><th>3.sınıf</th><tr>
+<tr id="ilksatir"><th>Ruby</th><th>Java</th><th>-</th><tr>
+<tr id="ikincisatir"><th>C</th><th>Html5</th><th>-</th><tr>
+<tr id="ücüncüsatir"><th>Html</th><th>JS</th><th>-</th><tr>
+</table>
+<p id="ilksatir">Dikkat et bununda id si ilksatir fakat tr#ilksatir daki css kodu etki etmiyecek,#ilksatir tr siz olan tüm ilksatir id si olanlara etki edecek..</p>
+
+<table border=5>
+<tr><th>Ad</th><th>Soyad</th><th>Sınıf</th><tr>
+<tr value="bir"><th>Onur</th><th>Anli</th><th>3.sınıf</th><tr>
+<tr value="iki"><th>Utkucan</th><th>Küçük</th><th>Anaokulu:)</th><tr>
+<tr value="üc"><th>Erdem </th><th>Birinci</th><th>3.sınıf</th><tr>
+</table>
+</html>
+<!--girişcss.css diye kaydet-->
+li{color:red;}
+h3,h4{color:orange;}
+tr#ilksatir{color:red;}/*önüne tr koymasakta olur fakat tr şunu sağlıyor:id=ilksatir olanlardan sadece tr içindekine etki.*/
+#ilksatir{font-style:italic;}
+tr#ikincisatir{color:orange;}
+tr#ücüncüsatir{color:blue;}
+tr[value="bir"]{color:red;}/*valuesi bir olana etki*/
+tr[value^="i"]{color:orange;}/*valuesinin ilk harfi i olana etki*/
+tr[value]{font-style:italic;}/*valuesi olan herkese etki*/
+tr[value$="c"]{color:pink;}/*valuesinin son harfi c olana etki*/
+/*tr[value*="a"] bu da value içinde a harfi olana etki*/
+*{font-size:25;}/* burdaki "*" herşey demek.Görüldüğü gibi tüm yazılar büyük.*/
